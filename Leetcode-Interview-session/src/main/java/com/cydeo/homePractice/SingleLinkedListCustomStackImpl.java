@@ -35,7 +35,7 @@ public class SingleLinkedListCustomStackImpl <E>  implements CustomStack<E>{
          * previous() to go back of prev node. Then I am marking current node with its next upcoming node
          * again going through loop until condition is true
          */
-        while (current.nextNode !=null){  //value=null, 1, 2, 3 -> null node
+        while (current.nextNode !=null){ //I do NOT want to process tail //value=null, 1, 2, 3 -> null node
             previousNode = current;  //value[null], 1, 2, 3 - null
             current= current.nextNode; //1 -> 2  -> 3
         }
@@ -63,7 +63,7 @@ public class SingleLinkedListCustomStackImpl <E>  implements CustomStack<E>{
        Node<E> current = head.nextNode;
         int count = 0;
         int latestIndex=-1;
-        while(current !=null){
+        while(current !=null){ //I want to process tail
             if(current.getValue().equals(item)){
               latestIndex=count; //0, 1
             }
@@ -74,8 +74,8 @@ public class SingleLinkedListCustomStackImpl <E>  implements CustomStack<E>{
     }
 
     public void printNodes(){
-        Node<E> current = head;
-        while (current !=null){
+        Node<E> current = head.nextNode;
+        while (current !=null){ //I want to process tail
             System.out.print(current.getValue()+" -> ");
             current = current.nextNode;
         }
