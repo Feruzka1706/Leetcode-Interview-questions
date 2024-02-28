@@ -1,4 +1,4 @@
-package com.cydeo.homePractice;
+package com.cydeo.homePractice.stack;
 
 public interface CustomStack<E> {
 

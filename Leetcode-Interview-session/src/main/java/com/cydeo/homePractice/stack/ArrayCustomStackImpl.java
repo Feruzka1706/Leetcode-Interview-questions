@@ -1,7 +1,5 @@
-package com.cydeo.homePractice;
+package com.cydeo.homePractice.stack;
 
-
-import java.util.Arrays;
 
 public class ArrayCustomStackImpl<E> implements CustomStack<E> {
 

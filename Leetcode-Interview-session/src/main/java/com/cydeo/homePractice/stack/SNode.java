@@ -1,12 +1,12 @@
-package com.cydeo.homePractice;
+package com.cydeo.homePractice.stack;
 
-public class Node <E> {
+public class SNode<E> {
 
     private E value;
-    public Node<E> nextNode;
+    public SNode<E> nextNode;
 
 
-    public Node(E value) {
+    public SNode(E value) {
         this.value = value;
         this.nextNode = null;
     }
