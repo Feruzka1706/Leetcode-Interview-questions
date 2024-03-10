@@ -1,5 +1,7 @@
 package com.cydeo.homePractice.stack;
 
+import java.util.Queue;
+
 public class StackDemoApp {
 
     public static void main(String[] args) throws Exception {
@@ -77,6 +79,7 @@ public class StackDemoApp {
         myStack2.push(100);
         System.out.println("After entering double sized array check: " +myStack2.peek());
         myStack2.printNodes();
+
 
     }
 }

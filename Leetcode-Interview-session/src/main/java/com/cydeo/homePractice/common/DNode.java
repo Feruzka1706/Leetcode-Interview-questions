@@ -1,4 +1,4 @@
-package com.cydeo.homePractice.stack;
+package com.cydeo.homePractice.common;
 
 public class DNode<E> {
 

@@ -1,5 +1,7 @@
 package com.cydeo.homePractice.stack;
 
+import com.cydeo.homePractice.common.DNode;
+
 public class DoubleLinkedListCustomStackImpl<E> implements CustomStack<E>{
 
     private DNode<E> head;

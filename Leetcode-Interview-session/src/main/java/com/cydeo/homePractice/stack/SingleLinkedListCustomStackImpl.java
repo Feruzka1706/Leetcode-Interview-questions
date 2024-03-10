@@ -1,5 +1,7 @@
 package com.cydeo.homePractice.stack;
 
+import com.cydeo.homePractice.common.SNode;
+
 public class SingleLinkedListCustomStackImpl <E>  implements CustomStack<E>{
 
    private SNode<E> head;
@@ -79,5 +81,4 @@ public class SingleLinkedListCustomStackImpl <E>  implements CustomStack<E>{
         }
         System.out.println();
     }
-
 }
